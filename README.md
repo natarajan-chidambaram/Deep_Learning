@@ -1,4 +1,6 @@
-This repository has 5 folders corresponding to 5 different assignments that were done as part of 2IMM10-Recommender Systems or Deep Learning coursework
+This repository has 6 folders corresponding to 6 different tasks involving Deep Learning in various applications
+
+A few of the tasks were done as part of 2IMM10-Recommender Systems or Deep Learning coursework
 
 1. Co-occurrence matrix, CBOW and Skipgram models: 
 
@@ -7,7 +9,17 @@ The alice in wonderland text is read my the model, co-occurrence matrix is creat
 Word-embeddings are formed for CBOW and Skipgram models, thus reducing the computational complexity. The advantages of negative-sampling is also evidently observed while training and tesing. The main drawback of these models is that they cannot preserve the order of occurrence of words. (Sounds interesting? open the corresponding .ipynb file, test it yourself and feel free to drop in your comments/obervation)
 
 
-2. Siamese network, triplet network and one-shot-learining: 
+2. Image Caption Generation
+
+If an image is given to the model, can it generate a caption for it? Yes, it can be done by extracting the features in the image using Dense layers, RNN with LSTM/GRU to generate the caption in a meaningfull way. In addition, Greedy Search and Beam search algorithms are used for the same and their performances are compared.
+
+
+3. Sentiment Analysis - Document Level and Aspect Level
+
+This file performs the document level sentiment analysis using both the Uni-directional and Bi-directional RNNs and their performances are compared. Similarly, the model for aspect level sentiment classification is trained and tested to evaluate its performance
+
+
+4. Siamese network, triplet network and one-shot-learining: 
 
 In the standard image classification task using neural network, a dataset with many examples for each class of images is formed, a large amount of time is spent in training/re-training the NN model to get good accuracy. However, there are many situations in which there are a very few examples for certain class of images. In such a situation how can the NN model be trained? how do we split the training and testing set to get significant performance? and how can we solve other challenges that depends on large sample size for training?
 
@@ -18,17 +30,12 @@ Here Cifar-100 dataset is used for training the built siamese network. In the da
 The same task is again repeated with Triplet network and the performances are compared.
 
 
-3. Document Level and Aspect Level Sentiment Analysis
+5. TransferLearning-Fine_Tune_BERT_for_Text_Classification_with_TensorFlow
 
-This file performs the document level sentiment analysis using both the Uni-directional and Bi-directional RNNs and their performances are compared. Similarly, the model for aspect level sentiment classification is trained and tested to evaluate its performance
-
-
-4. Image Caption Generation
-
-If an image is given to the model, can it generate a caption for it? Yes, it can be done by extracting the features in the image using Dense layers, RNN with LSTM/GRU to generate the caption in a meaningfull way. In addition, Greedy Search and Beam search algorithms are used for the same and their performances are compared.
+This assignment involves transfer learning, transformers network in NLP application using the tensorflow-hub's pretrained BERT model. The text can be translated to another language using RNN. In another application, sentiment analysis can be done only after receiving the full text, also it can be done done only to certain extent. However, by using Transformers network, the speed at which the texts can be processed can be increased as the sequential order of analyzing the text is removed and parallel computing is done using transformer network. One of the NLP applications is to classify if the given text is sincere or insincere using Quora database. Open the folder to gain more knowledge on this and the materials to read the required concepts for this project.
 
 
-5. Variational Auto Encoder and Semi Supervised Learning
+6. Variational Auto Encoder and Semi Supervised Learning
 
 This file has two tasks. First is VAE, in this the encoder and decoders are designed, reparameterized, used KL loss, trained and tested using MNIST dataset. The encoder gives 2 values in its bottle-neck layer, the decoder picks this up and reconstructs the image giving it translational/pahse shift.
 
