@@ -1,4 +1,4 @@
-This repository has 6 folders corresponding to 6 different tasks involving Deep Learning in various applications
+This repository has 7 folders corresponding to 7 different tasks involving Deep Learning in various applications
 
 A few of the tasks were done as part of 2IMM10-Recommender Systems or Deep Learning coursework
 
