@@ -1,0 +1,5 @@
+Usually anomalies are unavoidable in Time Series (TS) data. They give some information and has opened doors for further research and analysis in many use cases. In one such application, is it possible to detect the anomalies in the given timeseries data using deep learning? Yes, it is possible.
+
+Doing this with LSTM autoencoders is time saving as it could quickly learn to regenerate the orignial signal from the bottleneck layer of autoencoder with low reconstruction error. Generally, networks such as DAE and VAE are used to remove noise from images(\Deep_Learning\VAE_SemiSuperivsedLearning gives a view on this). Similarly the LSTM autoencoders learns to regenerate the signal without much anomalies/noise. If the reconstruction error is beyond certain limit, then the corresponding input signal can be termed to contain anomaly.
+
+This task covers in detail on how to preprocess the time series data as required by the network, design LSTM autoencoders, train, evaluate and visualize the results.
