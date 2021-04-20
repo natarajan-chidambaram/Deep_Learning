@@ -20,13 +20,16 @@ Word-embeddings are formed for CBOW and Skipgram models, thus reducing the compu
 
 If an image is given to the model, can it generate a caption for it? Yes, it can be done by extracting the features in the image using Dense layers, RNN with LSTM/GRU to generate the caption in a meaningfull way. In addition, Greedy Search and Beam search algorithms are used for the same and their performances are compared.
 
+4. Predict Future Product Prices
 
-4. Sentiment Analysis - Document Level and Aspect Level
+Time series prediction have helped us to be aware of any upcoming situation well ahead. This gives us room for preparedness and also allocate resources well ahead to avoid any damage. However, few robust models such as ARIMA could be used only if the additive, multiplicative orders, terms and etc are known. So, this project covers the usage of facebook's prophet model for time series prediction and it is friedly who are not aware of the any of the time series prediction terminologies. But, it is good to know the time series terminologies and the concepts to understand the visualizations and interpret the data well.
+
+5. Sentiment Analysis - Document Level and Aspect Level
 
 This file performs the document level sentiment analysis using both the Uni-directional and Bi-directional RNNs and their performances are compared. Similarly, the model for aspect level sentiment classification is trained and tested to evaluate its performance
 
 
-5. Siamese network, triplet network and one-shot-learining: 
+6. Siamese network, triplet network and one-shot-learining: 
 
 In the standard image classification task using neural network, a dataset with many examples for each class of images is formed, a large amount of time is spent in training/re-training the NN model to get good accuracy. However, there are many situations in which there are a very few examples for certain class of images. In such a situation how can the NN model be trained? how do we split the training and testing set to get significant performance? and how can we solve other challenges that depends on large sample size for training?
 
@@ -37,12 +40,12 @@ Here Cifar-100 dataset is used for training the built siamese network. In the da
 The same task is again repeated with Triplet network and the performances are compared.
 
 
-6. TransferLearning-Fine_Tune_BERT_for_Text_Classification_with_TensorFlow
+7. TransferLearning-Fine_Tune_BERT_for_Text_Classification_with_TensorFlow
 
 This assignment involves transfer learning, transformers network in NLP application using the tensorflow-hub's pretrained BERT model. The text can be translated to another language using RNN. In another application, sentiment analysis can be done only after receiving the full text, also it can be done done only to certain extent. However, by using Transformers network, the speed at which the texts can be processed can be increased as the sequential order of analyzing the text is removed and parallel computing is done using transformer network. One of the NLP applications is to classify if the given text is sincere or insincere using Quora database. Open the folder to gain more knowledge on this and the materials to read the required concepts for this project.
 
 
-7. Variational Auto Encoder and Semi Supervised Learning
+8. Variational Auto Encoder and Semi Supervised Learning
 
 This file has two tasks. First is VAE, in this the encoder and decoders are designed, reparameterized, used KL loss, trained and tested using MNIST dataset. The encoder gives 2 values in its bottle-neck layer, the decoder picks this up and reconstructs the image giving it translational/pahse shift.
 
