@@ -44,8 +44,11 @@ The same task is again repeated with Triplet network and the performances are co
 
 This assignment involves transfer learning, transformers network in NLP application using the tensorflow-hub's pretrained BERT model. The text can be translated to another language using RNN. In another application, sentiment analysis can be done only after receiving the full text, also it can be done done only to certain extent. However, by using Transformers network, the speed at which the texts can be processed can be increased as the sequential order of analyzing the text is removed and parallel computing is done using transformer network. One of the NLP applications is to classify if the given text is sincere or insincere using Quora database. Open the folder to gain more knowledge on this and the materials to read the required concepts for this project.
 
+8. Understanding_DeepFakes_Keras-DCGAN
 
-8. Variational Auto Encoder and Semi Supervised Learning
+This projects gives an understnding on how to construct a DCGAN with the help of a number from MNIST data set from tf.keras. The performance is found to be good after training for certain epochs and this could be improved by changing the hyper-parameters and layers. The architecture used in this project is inspired from (https://arxiv.org/abs/1503.03832)
+
+9. Variational Auto Encoder and Semi Supervised Learning
 
 This file has two tasks. First is VAE, in this the encoder and decoders are designed, reparameterized, used KL loss, trained and tested using MNIST dataset. The encoder gives 2 values in its bottle-neck layer, the decoder picks this up and reconstructs the image giving it translational/pahse shift.
 

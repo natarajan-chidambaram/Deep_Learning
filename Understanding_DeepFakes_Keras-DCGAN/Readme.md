@@ -1,0 +1,3 @@
+Deep fake is generally used for generating synthetic data similar to real world data using Neural Networks. Ususally the sythetic data can be images, signals, audio, video. Here Deep Convolutional Generative Adversarial Network (DCGAN) is used to do generate images that is similar to real world data. This sytnhetic images can also be used for training NN/ML models when limited training data is available.
+
+In this project, MNIST data set is taken as a toy dataset and one of the numbers is chosen to train the GAN and generate fake images similar to that number.
